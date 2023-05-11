@@ -1,0 +1,32 @@
+{
+  "name": "joy2362/blog",
+  "description": "Simple blog project with raw php",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\": "database/",
+      "Console\\": "console"
+    },
+    "classmap": ["console"]
+  },
+  "authors": [
+    {
+      "name": "joy2362",
+      "email": "abdullahzahidjoy@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.1",
+    "vlucas/phpdotenv": "^5.5@dev",
+    "ext-pdo": "*",
+    "symfony/console": "6.3.x-dev"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  }
+}
