@@ -1,5 +1,5 @@
 body {
-  background-color: #9f9da7;
+  background-color: #00cccc;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #2b3e51;
@@ -35,7 +35,7 @@ a:active:hover {
 }
 
 #login-form-wrap {
-  background-color: #fff;
+  background-color: #0ba0a0;
   width: 35%;
   margin: 30px auto;
   text-align: center;
@@ -72,7 +72,7 @@ input[type="email"] {
           appearance: none;
   position: relative;
   display: inline-block;
-  background: none;
+  background: #00cccc;
 }
 input[type="text"]:focus,
 input[type="email"]:focus {

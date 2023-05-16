@@ -4,7 +4,8 @@ use App\controller\UserController;
 
 require_once realpath(__DIR__ . '/vendor/autoload.php');
 require_once realpath(__DIR__ . '/config.php');
-$users = UserController::getUser();
+
+session_start();
 ?>
 
 <!DOCTYPE html>

@@ -15,7 +15,9 @@ session_start();
             $_SESSION["email"] = $data['email'];
             $_SESSION["name"] = $data['name'];
             header('location: /');
-//            var_dump($data);
+        }
+        else{
+            echo "email or password not match";
         }
     }
 ?>

@@ -1,6 +1,6 @@
 <?php
-session_start();
-$name = $_SESSION['name'];
+    $name = $_SESSION['name'] ?? null;
+    $email = $_SESSION['email'] ?? null;
 ?>
 <header class="tm-header" id="tm-header">
     <div class="tm-header-wrapper">
@@ -35,9 +35,13 @@ $name = $_SESSION['name'];
                             Log in
                         </a></li>
                 <?php } else { ?>
-                    <li class="tm-nav-item"><a href="#" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="/view/user.php" class="tm-nav-link">
                             <i class="far fa-user"></i>
                             <?php echo $name ?>
+                        </a></li>
+                    <li class="tm-nav-item"><a href="/view/logout.php" class="tm-nav-link">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            Log out
                         </a></li>
                 <?php } ?>
             </ul>
